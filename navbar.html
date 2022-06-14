@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b31339aff9.js" crossorigin="anonymous"></script>
+    <style>
+      #nav {
+        display: grid;
+        /* border: 1px solid green; */
+        width: 90%;
+        height: auto;
+        margin: auto;
+      }
+      .box1 {
+        display: flex;
+        border: 1px solid blue;
+        width: 100%;
+        height: 100px;
+        justify-content: space-between;
+      }
+      .box1 > div {
+        border: 1px solid red;
+        justify-content: space-around;
+      }
+      .box1 > div:first-child {
+        width: 20%;
+      }
+      .box1 > div:first-child > a > img {
+        width: 100%;
+        height: auto;
+        padding-top: 15px;
+      }
+      .box1 > div:last-child {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 50px);
+      }
+      .box1 > div:last-child > div {
+        border: 1px solid green;
+        display: flex;
+      }
+
+      .box2 {
+        display: flex;
+        border: 1px solid orange;
+        width: 100%;
+        height: 40px;
+        background-color: yellow;
+      }
+      .box2 > div {
+        display: flex;
+        height: 100%;
+        border: 1px solid teal;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .box2 > div > a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      .box2 > div > a:hover {
+        text-decoration: underline;
+      }
+      .box2 > div:first-child {
+        background-color: black;
+        color: white;
+      }
+
+      
+      
+
+      .do .search button:hover {
+        background: #ccc;
+      }
+      .do > div:first-child {
+        width: 80%;
+        margin-left: 165px;
+        justify-content: space-around;
+      }
+      .do>div:last-child{
+         
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+         
+      }
+      .do>div:last-child>a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+      }
+      #ss{
+        width: 50px;
+        border: 1px solid red;
+        border-radius: 20px 0px 0px 20px;
+      }
+      .search{
+        display: flex;
+        border: 1px solid blue;
+        border-radius: 20px 0px 0px 20px;
+        background-color: yellow;
+      }
+       button>img{
+        width: 100%;
+        height: 20px;
+        
+       }
+       .search{
+        width: 31%;
+       }
+      
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <div class="box1">
+        <div>
+          <a href=""
+            ><img
+              src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="do">
+          <div>
+            <p>Save $3 with App</p>
+            <p>Support center</p>
+            <p>Ship to /USD</p>
+            <p>Language</p>
+            <p>Country Website</p>
+          </div>
+          <div>
+            <div class="search">
+                <select id="ss">
+                    
+                    <option value="All">All</option>
+                    <option value="Phone">Phone</option>
+                    <option value="xiomi mobile">xiomi mobile</option>
+                </select>
+                <input type="text" placeholder="search" >
+                 <button><img src="https://www.kindacode.com/wp-content/uploads/2020/12/search.png"></button>
+            </div>
+         
+          <a href=""><i class="fa-solid fa-user"> </i> Sign In</a>
+          <a href=""><i class="fa-regular fa-heart"></i> Favorites</a>
+          <a href=""><i class="fa-thin fa-cart-arrow-down"></i> Cart</a>
+           
+
+            
+        </div>
+         </div>
+       </div> 
+      <div class="box2">
+        <div>
+          <h3>Category</h3>
+        </div>
+        <div>
+          <a href="">COUPON</a>
+        </div>
+        <div>
+          <a href="">SUPER DEALS</a>
+        </div>
+        <div>
+          <a href="">APP ONLY</a>
+        </div>
+        <div>
+          <a href="">NEW ARRIVALS</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
