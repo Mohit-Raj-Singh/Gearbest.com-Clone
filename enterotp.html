@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enter otp</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(90deg,rgb(153, 0, 255),red);
+        }
+        body>div{
+            width: 400px;
+            height: 300px;
+            padding: 25px 25px;
+            background-color: antiquewhite;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        h2{
+            text-align: center;
+            color: blueviolet;
+        }
+        input{
+            width:50px;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+            text-align: center;
+            height: 40px;
+            font-size: 25px;
+            background-color: antiquewhite;
+        }
+        #otp{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin-top: 18%;
+        }
+        p{
+            text-align: center;
+            margin-top: 25px;
+        }
+        button{
+            display: block;
+            margin: auto;
+            padding: 5px 25px;
+            border-radius: 5px;
+            margin-top: 25px;
+            font-size: 18px;
+            border: 1px solid grey;
+            cursor: pointer;
+            background-color: yellowgreen;
+        }
+        button:hover{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Enter your OTP</h2>
+        <div id="otp">
+              <input type="text" maxlength="1" id="first">
+              <input type="text" maxlength="1" id="second">
+              <input type="text" maxlength="1"id="third">
+              <input type="text" maxlength="1" id="fourth">
+        </div>
+        <button id="btn">Enter</button>
+        <p> Have not received the OTP ?<a href="payment.html">Resend</a></p>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("btn").addEventListener("click",myfun);
+    function myfun(){
+        if(document.getElementById("first").value=="1"&&document.getElementById("second").value=="2"&& document.getElementById("third").value=="3"&&document.getElementById("fourth").value=="4" ){
+            alert("Payment Successful");
+            window.location,href="confirmpage.html";
+        }else{
+            alert("OTP does not match");
+        }
+        document.getElementById("first").value="";
+        document.getElementById("second").value="";
+        document.getElementById("third").value="";
+        document.getElementById("fourth").value="";
+
+    }
+</script>
