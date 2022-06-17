@@ -21,6 +21,7 @@
     align-items: center;
     justify-content: space-evenly;
     font-size: 10px;
+
 }
 
 #container>div:nth-child(1)>div {
@@ -132,3 +133,27 @@ button {
 #mid_div+p {
     margin: 5px 0px 0px 10px;
 }
+
+#container>div:nth-child(1):hover{
+    color:coral;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+#mid_div>div>p:hover{
+    color:cornflowerblue;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+#midbag:hover{
+    color:antiquewhite
+}
+
+#mid_div:hover{
+    color:beige;
+}
+
+
+
+
