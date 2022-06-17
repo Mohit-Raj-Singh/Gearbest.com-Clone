@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    #main {
+        border: 1px red solid;
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    #container {
+        border: 1px blue solid;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+
+    }
+
+    #container>div {
+        border: 1px green solid;
+    }
+    img{
+        width: 100%;
+    }
+</style>
+
+<script src="https://kit.fontawesome.com/64a92b73e4.js" crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div><span>RECOMMENDED FOR YOU</span></div>
+        <div id="container">
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+<script src="newArrival.js"></script>
