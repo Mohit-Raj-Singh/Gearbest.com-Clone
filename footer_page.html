@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer-Page | Arijeet</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #footer_main_aj {
+            /* border: solid 2px red; */
+            height: 100%;
+            width: 90%;
+            margin: auto;
+            background-color: #fafafa;
+        }
+
+        #footer-4 {
+            padding: 20px;
+            /* border: 1px solid; */
+            background-color: white;
+        }
+
+        #cont_boxes {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            margin: auto;
+            /* border: 1px solid green; */
+            height: 100%;
+
+        }
+
+        #cont_boxes>div>p {
+            font-family: OpenSans, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #666666;
+            margin: 7px 0px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            font-family: OpenSans, Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        #qr-code {
+            padding-top: 10px;
+        }
+
+        #qr-code>img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #comp_logo {
+            position: absolute;
+            margin-left: 110px;
+            margin-top: -105px;
+        }
+
+        #comp_logo>img {
+            width: 50px;
+            height: 50px;
+        }
+
+        #cont_logo {
+            position: absolute;
+            margin-left: 800px;
+        }
+
+
+        #footer-5 {
+            display: grid;
+            grid-template-columns: repeat(14, 2fr);
+            grid-template-rows: repeat(2, 1fr);
+            margin: auto;
+            width: 100%;
+            gap: 10px;
+            margin-top: 30px;
+            justify-content: center;
+            background-color: white;
+
+        }
+
+        #footer-5>img {
+            width: 60px;
+            height: 25px;
+        }
+
+        #footer-5>img:nth-child(15),
+        #footer-5>img:nth-child(16),
+        #footer-5>img:nth-child(17),
+        #footer-5>img:nth-child(18),
+        #footer-5>img:nth-child(19),
+        #footer-5>img:nth-child(20),
+        #footer-5>img:nth-child(21),
+        #footer-5>img:nth-child(22),
+        #footer-5>img:nth-child(23),
+        #footer-5>img:nth-child(24) {
+            margin-left: 225px;
+            margin-right: -225px;
+        }
+
+        #last_footer {
+            background-color: black;
+            height: 50px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        /* #left>p,#left>input,#left>div{
+            display: inline;
+        } */
+
+        #footer-3 {
+            background-color: white;
+        }
+
+        #search_bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #left {
+            /* width: 50%; */
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            align-items: center;
+        }
+
+        #left>p {
+            font-size: 18px;
+            font-family: OpenSans, Arial, Helvetica, sans-serif;
+            padding-right: 5px;
+            font-weight: bold;
+            color: grey;
+        }
+
+        #left>input {
+            width: auto;
+            height: 30px;
+            font-size: 16px;
+        }
+
+        #left>div {
+            background-color: black;
+            color: white;
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #right {
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            gap: 5px 20px;
+
+        }
+
+        #right>img {
+            width: 25px;
+            height: 25px;
+        }
+
+        #right>img:hover {
+            background-color: rgb(196, 99, 99);
+        }
+
+        #footer-2 {
+            /* height: 100px; */
+            /* border: 1px solid blue; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            background-color: white;
+
+        }
+
+        #f-2_left {
+            width: auto;
+            /* border: 1px solid pink; */
+            padding-left: 10px;
+            margin: auto;
+        }
+
+        #f-2_left>a>p {
+            width: 80%;
+            text-align: center;
+            font-family: OpenSans, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+
+        }
+
+        #f-2_left>img {
+            width: auto;
+            height: auto;
+        }
+
+        #f-2_right {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 100%;
+            /* border: 1px solid teal; */
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        #f-2_right>div {
+            /* border: 1px solid coral; */
+            width: 100%;
+        }
+
+        #f-2_right>div:hover {
+            color: #ffda00;
+            cursor: default;
+        }
+
+        #f-2_right>div>img {
+            width: 30%;
+            height: 50%;
+        }
+
+        #f-2_right>div>p {
+            width: 200px;
+            color: #666666;
+            font-family: OpenSans, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        #f-2_right>div>h4 {
+            font-family: OpenSans, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        #first_footer {
+            display: grid;
+            grid-template-columns: 1fr 9fr;
+            padding: 20px;
+            font-family: OpenSans, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin-bottom: 30px;
+            /* border: 1px solid green; */
+            background-color: white;
+
+        }
+
+        #f1_left {
+            padding-top: 5px;
+        }
+
+        #f1_right {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: auto;
+            width: 100%;
+            /* border: 1px solid brown; */
+            text-align: center;
+            font-family: OpenSans, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            color: #666666;
+            font-weight: 400;
+        }
+
+        #f1_right>a:nth-child(10) {
+            width: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="footer_main_aj">
+        <div id="first_footer">
+            <div id="f1_left">Popular Searches:</div>
+            <div id="f1_right">
+                <a href="">
+                    <p>realme buds q</p>
+                </a>
+                <a href="">
+                    <p>xiaomi redmi 7 case</p>
+                </a>
+                <a href="">
+                    <p>lenovo lp1s tws</p>
+                </a>
+                <a href="">
+                    <p>5g phone</p>
+                </a>
+                <a href="">
+                    <p>projector 4k</p>
+                </a>
+                <a href="">
+                    <p>men's sports shoes</p>
+                </a>
+                <a href="">
+                    <p>creality ender 3</p>
+                </a>
+                <a href="">
+                    <p>xiaomi mi band 5</p>
+                </a>
+                <a href="">
+                    <p>led light strip</p>
+                </a>
+                <a href="">
+                    <p>360 s7 robot vacuum cleaner</p>
+                </a>
+                <a href="">
+                    <p>amazfit gts 2</p>
+                </a>
+                <a href="">
+                    <p>roborock s5 max</p>
+                </a>
+                <a href="">
+                    <p>xiaomi vacuum</p>
+                </a>
+                <a href="">
+                    <p>poco x3 nfc</p>
+                </a>
+            </div>
+        </div>
+        <div id="footer-2">
+            <div id="f-2_left">
+                <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/new-logo.png" alt="">
+                <a href="file:///C:/Users/dell/Desktop/gearbest/footer_page.html">
+                    <p>AFFORDABLE QUALITY FUN SHOPPING</p>
+                </a>
+            </div>
+            <div id="f-2_right">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/6947/6947936.png" alt="">
+                    <h4>High Quality Selection</h4>
+                    <p>Total product quality control for peace of mind</p>
+                </div>
+                <div><img src="https://cdn-icons-png.flaticon.com/512/6948/6948414.png" alt="">
+                    <h4>Affordable Prices</h4>
+                    <p>Factory direct prices for maximum savings</p>
+                </div>
+                <div><img
+                        src="https://cdn-icons-png.flaticon.com/512/709/709790.png"
+                        alt="">
+                    <h4>Express Shipping</h4>
+                    <p>Fast, reliable delivery from global warehouses</p>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/6309/6309078.png" alt="">
+                    <h4>Worry-free After-sales</h4>
+                    <p>Instant access to professional support</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer-3">
+            <div id="search_bar">
+                <div id="left">
+                    <p>Newsletter</p>
+                    <input type="text" placeholder="Enter Email to get 50 points">
+                    <div>Subscribe</div>
+                </div>
+                <div id="right">
+                    <img src="https://www.flaticon.com/svg/vstatic/svg/6422/6422199.svg?token=exp=1655453928~hmac=456f0f07f7052d5c05c5c886faadd89d"
+                        alt="">
+                    <img src="https://cdn-icons.flaticon.com/png/128/3669/premium/3669932.png?token=exp=1655453821~hmac=2b689c75d18f5f135a861517fd902c2a"
+                        alt="">
+                    <img src="https://cdn-icons.flaticon.com/png/512/3669/premium/3669688.png?token=exp=1655454248~hmac=5ec66eee7f75c57c9d7bb85b87d76ed6"
+                        alt="">
+                    <img src="https://cdn-icons.flaticon.com/png/512/2175/premium/2175205.png?token=exp=1655454428~hmac=3d2a6ba62f624e1d21a57919db9a9b46"
+                        alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/49/49444.png" alt="">
+                    <img src="https://cdn-icons.flaticon.com/png/512/4401/premium/4401407.png?token=exp=1655455248~hmac=6efbfe328b00d48896832fd64401e434"
+                        alt="">
+                    <img src="https://cdn-icons.flaticon.com/png/512/4138/premium/4138168.png?token=exp=1655454744~hmac=892174c1665a6a202928a442abe63938"
+                        alt="">
+                    <img src="https://cdn-icons-png.flaticon.com/512/49/49334.png" alt="">
+                    <img src="https://cdn-icons.flaticon.com/png/512/3665/premium/3665958.png?token=exp=1655455305~hmac=c058470c939483fe790a612b74034c77"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div id="footer-4">
+            <div id="cont_boxes">
+                <div id="cont_logo">
+                    <div>
+                        <h3>Download App!</h3>
+                        <p style="font-family: OpenSans, Arial, Helvetica, sans-serif;font-size: 12px;">Save $3 with App
+                            & New User Only</p>
+                    </div>
+                    <div id="qr-code"><img src="https://cdn-icons-png.flaticon.com/512/241/241521.png" alt=""></div>
+                    <div id="comp_logo">
+                        <img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504884.png?token=exp=1655458138~hmac=1b4dc27c7aa3a2649636917f29774161"
+                            alt="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732042.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-5">
+        </div>
+        <div id="last_footer"></div>
+    </div>
+</body>
+
+<script>
+
+    let main_footer = document.querySelector("#footer_main_aj")
+
+    let f4_data = [
+        {
+            mh: "Company Information",
+            sh1: "About Us",
+            sh2: "Privacy Policy",
+            sh3: " Terms and Conditions",
+            sh4: "Intellectual Property Policy",
+            sh5: "Testimonials",
+            sh6: "Contact Us",
+            sh7: "Report Security Issue",
+            sh8: "Sell on Gearbest",
+            sh9: "Cookies Policy",
+            sh10: "Top Brands",
+            sh11: "Gearbest Official Blog",
+            sh12: "Top Searches"
+
+        },
+
+        {
+            mh: "Customer Service",
+            sh1: "Shipping Information",
+            sh2: "My Favorites",
+            sh3: "FAQ For Newsletter Subscription",
+            sh4: "My Points",
+            sh5: "Warranty and Return",
+            sh6: "Payment Methods",
+            sh7: "Deposit Expansion",
+            sh8: "FAQ & Support",
+            sh9: "Sitemap",
+            sh10: "Gearbest Wallet Instruction",
+            sh11: "FAQs about COVID-19",
+            sh12: "",
+
+
+        },
+
+        {
+            mh: "Other Business",
+            sh1: "Partnership Programs",
+            sh2: "Associate Program",
+            sh3: "",
+            sh4: "",
+            sh5: "",
+            sh6: "",
+            sh7: "",
+            sh8: "",
+            sh9: "",
+            sh10: "",
+            sh11: "",
+            sh12: "",
+        },
+
+        // {
+        //     mh: "Download App!",
+        //     sh1: "Save $3 with App & New User Only",
+        //     sh2: "",
+        //     sh3: "",
+        //     sh4: "",
+        //     sh5: "",
+        //     sh6: "",
+        //     sh7: "",
+        //     sh8: "",
+        //     sh9: "",
+        //     sh10: "",
+        //     sh11: "",
+        //     sh12: "",
+        // }
+
+    ]
+
+    display_footer_4()
+    function display_footer_4() {
+        f4_data.forEach(function (elem) {
+            let footer_4 = document.querySelector("#footer-4")
+            let f4_boxes = document.querySelector("#cont_boxes")
+            let tbody = document.createElement("div")
+            console.log(elem)
+            let th = document.createElement("h3")
+            th.innerText = elem.mh
+
+            let td1 = document.createElement("a")
+            td1.href = "https://www.gearbest.com/"
+            td1.innerText = elem.sh1
+
+            let td2 = document.createElement("a")
+            td2.innerText = elem.sh2
+            td2.href = "https://www.gearbest.com/"
+
+            let td3 = document.createElement("a")
+            td3.innerText = elem.sh3
+            td3.href = "https://www.gearbest.com/"
+
+            let td4 = document.createElement("a")
+            td4.innerText = elem.sh4
+            td4.href = "https://www.gearbest.com/"
+
+            let td5 = document.createElement("a")
+            td5.innerText = elem.sh5
+            td5.href = "https://www.gearbest.com/"
+
+            let td6 = document.createElement("a")
+            td6.innerText = elem.sh6
+            td6.href = "https://www.gearbest.com/"
+
+            let td7 = document.createElement("a")
+            td7.innerText = elem.sh7
+            td7.href = "https://www.gearbest.com/"
+
+            let td8 = document.createElement("a")
+            td8.innerText = elem.sh8
+            td8.href = "https://www.gearbest.com/"
+
+            let td9 = document.createElement("a")
+            td9.innerText = elem.sh9
+            td9.href = "https://www.gearbest.com/"
+
+            let td10 = document.createElement("a")
+            td10.innerText = elem.sh10
+            td10.href = "https://www.gearbest.com/"
+
+            let td11 = document.createElement("a")
+            td11.innerText = elem.sh11
+            td11.href = "https://www.gearbest.com/"
+
+            let td12 = document.createElement("a")
+            td12.innerText = elem.sh12
+            td12.href = "https://www.gearbest.com/"
+
+            let pd1 = document.createElement("p")
+            pd1.append(td1)
+
+            let pd2 = document.createElement("p")
+            pd2.append(td2)
+
+            let pd3 = document.createElement("p")
+            pd3.append(td3)
+
+            let pd4 = document.createElement("p")
+            pd4.append(td4)
+
+            let pd5 = document.createElement("p")
+            pd5.append(td5)
+
+            let pd6 = document.createElement("p")
+            pd6.append(td6)
+
+            let pd7 = document.createElement("p")
+            pd7.append(td7)
+
+            let pd8 = document.createElement("p")
+            pd8.append(td8)
+
+            let pd9 = document.createElement("p")
+            pd8.append(td9)
+
+            let pd10 = document.createElement("p")
+            pd10.append(td10)
+
+            let pd11 = document.createElement("p")
+            pd11.append(td11)
+
+            let pd12 = document.createElement("p")
+            pd12.append(td12)
+
+
+
+            tbody.append(th, pd1, pd2, pd3, pd4, pd5, pd6, pd7, pd8, td9, pd10, pd11, pd12)
+            f4_boxes.append(tbody)
+            footer_4.append(f4_boxes)
+            main_footer.append(footer_4)
+        })
+    }
+
+    display_footer_5()
+    function display_footer_5() {
+        let f5_data = [
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/money.png" },
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/m.png" },
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/rese.png" },
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/paypal.png" },
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/visa.png" },
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/a.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/ww.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/jcb.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/dic.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/ya.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/d.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/qiwi.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/oxxo.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/webmoney.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/bo.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/postepay.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/giropay.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/sofort.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/p.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/pago.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/banner/20180407_2974/eps.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/Visa-Logo.png" },
+
+            { image: "https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/m-Logo.png" },
+        ]
+
+        f5_data.forEach(function (elem) {
+            let img = document.createElement("img")
+            img.src = elem.image
+
+            let box_f5 = document.querySelector("#footer-5")
+
+            box_f5.append(img)
+            main_footer.append(box_f5)
+
+        })
+
+    }
+
+    display_lastfooter()
+    function display_lastfooter() {
+        td = document.createElement("p")
+        td.innerText = "Copyright © 2014-2022 Gearbest.com. All Rights Reserved."
+        let box = document.querySelector("#last_footer")
+        box.append(td)
+        main_footer.append(box)
+    }
+
+</script>
+
+
+
+</html>
