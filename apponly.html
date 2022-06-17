@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apponly</title>
+</head>
+<style>
+    #main {
+        width: 90%;
+        margin: auto;
+        border: 1px solid red;
+    }
+    #list {
+        width: 100%;
+        height:100px;
+        border: 1px solid yellow;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #list > div {
+        height: 50px;
+        margin: auto;
+    }
+    #sort {
+        width: 100%;
+        height: 60px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: end;
+    }
+    #product {
+        width: 100%;
+        margin-top: 10px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    #product > div > h3 {
+        color: #f53348;
+    }
+    #product > div > h3+h4+p {
+        color: #f53348;
+        margin-top: -10px;
+    }
+    #product > div > h4 {
+        color: #ada39d;
+    }
+    #product > div {
+        padding: 10px;
+        height: 400px;
+        margin: auto;
+    }
+    #product > div:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    #product > div:nth-child(2) {
+        margin: 5px 5px 5px 5px;
+    }
+    #nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: auto;
+    }
+    #sort > p > a:hover, a:active {
+        background-color: #ffda00;
+    }
+    #sort > p > a:link, a:visited {
+        color: black;
+        padding: 10px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    #list > div:hover {
+        text-decoration: underline;
+        text-decoration-color: #ffda00;
+        text-decoration-style: solid;
+    }
+</style>
+<body>
+    <div id="main">
+        <div id="list">
+            <div>ALL</div>
+            <div> Consumer Electronics</div>
+            <div> Computers, Tablets & Office</div>
+            <div> Drones, Toys & Hobbies</div>
+            <div> Cell Phones & Accessories</div>
+            <div>Home Improvement & Tools</div>
+            <div> Home & Garden</div>
+            <div> Motor & Car Electronics</div>
+            <div> Women's Fashion</div>
+            <div> Men's Fashion</div>
+            </div>
+        </div>
+        <div id="sort">
+            <p>Sort By:
+                <a href="https://www.gearbest.com/app-exclusive.html?order=hot" target="_blank">Hottest</a>
+                <a href="https://www.gearbest.com/app-exclusive.html?order=new" target="_blank">Newest</a>
+                <a href="https://www.gearbest.com/app-exclusive.html?order=discount" target="_blank">Discount</a>
+            </p>
+        </div>
+        <div id="product">
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_thumb_220-v1/7d9a6e744268.jpg" alt="error">
+                <p>Global Xiaomi Mi TV Box S 4K HDR Android TV 8.1 Ultra HD</p>
+                <h3>$66.99</h3>
+                <h4>$67.99</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16457/goods_thumb_220-v3/4d69d717ab50.jpg" alt="error">
+                <p>Xiaomi WOWSTICK 1F+ Electric Precision Screwdriver</p>
+                <h3>$36.88</h3>
+                <h4>$36.99</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16414/goods_thumb_220-v1/e1c76b337a79.jpg" alt="error">
+                <p>Original Xiaomi Mi Band 6 / 6 NFC Smart Wristband 1.56 inch</p>
+                <h3>$38.89</h3>
+                <h4>$38.99</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6899301501118902272/16463/goods_thumb_220-v4/ad2a20a94177.jpg" alt="error">
+                <p>ASLING Luminous Series One-Cable Three Purpose USB TO</p>
+                <h3>$7.69</h3>
+                <h4>$7.99</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6771730315905003520/16383/goods_thumb_220-v1/25dc9b7eebc0.jpg" alt="error">
+                <p>YUKUI LED Electric Sonic Dental Calculus Scaler Oral Teeth</p>
+                <h3>$41.07</h3>
+                <h4>$41.59</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/store/6771730315905003520/16419/goods_thumb_220-v1/a2fbd39cb9c5.jpg" alt="error">
+                <p>2.4Ghz 6 Channel 124 RC Excavator toy RC Engineering</p>
+                <h3>$35.16</h3>
+                <h4>$35.58</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6878388619120406528/16464/goods_thumb_220-v2/134ae8309154.jpg" alt="error">
+                <p>original Xiaomi Mi Robot Vacuum Cleaner Main Brushes</p>
+                <h3>$14.98</h3>
+                <h4>$14.99</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16475/goods_thumb_220-v1/74b8450aa656.jpg" alt="error">
+                <p>500X25 50000M Portable Zoom HD Professional Powerful</p>
+                <h3>$29.94</h3>
+                <h4>$29.99</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_thumb_220-v3/b5bb5866c021.jpg" alt="error">
+                <p>Original Xiaomi Backpack 7L/10L/15L/20L Travel Light</p>
+                <h3>$11.59</h3>
+                <h4>$11.99</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6883469851634102272/16497/goods_thumb_220-v1/8b6485baad75.jpg" alt="error">
+                <p>E21 Smart Sports Couple Watch Heart Rate Blood Pressure</p>
+                <h3>$42.40</h3>
+                <h4>$42.93</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16499/goods_thumb_220-v5/d80e56d8f6d2.jpg" alt="error">
+                <p>Global Version MI 11 Ultra 6.3 inch Smartphone 12Gb Cell</p>
+                <h3>$98.00</h3>
+                <h4>$98.50</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6926471294045319168/16529/goods_thumb_220-v1/8ad475fc01f3.jpg" alt="error">
+                <p>WT09 Active Noise Cancelling Headphones Bluetooth 5.1</p>
+                <h3>$19.05</h3>
+                <h4>$19.38</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_thumb_220-v1/126354806df6.jpg" alt="error">
+                <p>Xiaomi PEN Mijia Super Durable Sign Pen 0.5mm MI Pen For</p>
+                <h3>$02.39</h3>
+                <h4>$02.59</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6883820374342168576/16472/goods_thumb_220-v2/a50fc3341fef.jpg" alt="error">
+                <p>M11 Ultra Smartphone 16GB+1TB 24+48MP Global</p>
+                <h3>$113.00</h3>
+                <h4>$114.00</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6901174613791928320/16502/goods_thumb_220-v3/31d0d9d6c843.jpg" alt="error">
+                <p>A9 Mini WiFi Video Surveillance 1080p HD Infrared Night Visio</p>
+                <h3>$10.67</h3>
+                <h4>$10.68</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16414/goods_thumb_220-v1/5f26bc001550.jpg" alt="error">
+                <p>Original Xiaomi Redmi Buds 3 Lite Youth Edition Earphone</p>
+                <h3>$15.66</h3>
+                <h4>$15.80</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16469/goods_thumb_220-v3/c00a854704ea.jpg" alt="error">
+                <p>Original Xiaomi Backpack 7L/10L/15L/20L Travel Light</p>
+                <h3>$7.59</h3>
+                <h4>$7.99</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6878024886355423232/16416/goods_thumb_220-v1/9dbf47dbe530.jpg" alt="error">
+                <p>A9 Mini Camera WiFi Camera 1080P HD Night Version Voice</p>
+                <h3>$15.80</h3>
+                <h4>$15.90</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div>
+                <img src="https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16486/goods_thumb_220-v1/965097e8a620.jpg" alt="error">
+                <p>Aqara Smart Temperature Humidity Sensor Zigbee Wireless Connection</p>
+                <h3>$17.96</h3>
+                <h4>$17.99</h4>
+                <p>Flash Sale</p>
+            </div>
+            <div><img src="https://gloimg.gbtcdn.com/soa/gb/item/6898341271098814464/16465/goods_thumb_220-v1/8fc8853ff3b3.jpg" alt="error">
+                <p>Xiaomi Redmi Airdots 3 TWS wireless Bluetooth 5.2</p>
+                <h3>$15.59</h3>
+                <h4>$19.99</h4>
+                <p>Flash Sale</p></div>
+        </div>
+    </div>
+</body>
+</html>
