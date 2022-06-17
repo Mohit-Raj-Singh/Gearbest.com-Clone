@@ -89,20 +89,24 @@
 
         #footer-5 {
             display: grid;
-            grid-template-columns: repeat(14, 2fr);
+            grid-template-columns: repeat(14, 1fr);
             grid-template-rows: repeat(2, 1fr);
             margin: auto;
             width: 100%;
-            gap: 10px;
+            gap: 8px 0px;
             margin-top: 30px;
-            justify-content: center;
+            justify-content:space-evenly;
             background-color: white;
+            align-items: center;
+            padding: 10px;
 
         }
 
         #footer-5>img {
-            width: 60px;
-            height: 25px;
+            height: 45%;
+            display: flex;
+            width: 60%;
+            margin: auto;
         }
 
         #footer-5>img:nth-child(15),
@@ -114,9 +118,22 @@
         #footer-5>img:nth-child(21),
         #footer-5>img:nth-child(22),
         #footer-5>img:nth-child(23),
-        #footer-5>img:nth-child(24) {
-            margin-left: 225px;
-            margin-right: -225px;
+        #footer-5>img:nth-child(24) 
+        {
+            margin-left:220px;
+            margin-right: -220px;
+            margin-top: -10px;
+            /* width: 30px;
+            height: 25px; */
+        
+         }  
+
+        /* #footer-5>img:nth-child(17){
+          margin-right: -50px;
+        } */
+
+        #footer-5>img:nth-child(3){
+           width: 130px;
         }
 
         #last_footer {
@@ -131,6 +148,8 @@
 
         #footer-3 {
             background-color: white;
+            /* border: 1px solid orange; */
+            align-content: center;
         }
 
         #search_bar {
@@ -139,6 +158,9 @@
             padding: 5px 40px;
             margin-top: 20px;
             margin-bottom: 20px;
+            align-items: center;
+            height: 80px;
+            /* gap: 70px; */
         }
 
         #footer-3 #left {
@@ -176,6 +198,9 @@
             grid-template-columns: repeat(9, 1fr);
             grid-template-rows: auto;
             gap: 5px 30px;
+            /* border: 1px solid violet; */
+            align-items: center;
+            /* height: 70%; */
 
         }
 
@@ -185,19 +210,24 @@
 
         #footer-3  #right>div>a {
             text-decoration: none;
+            color: #464646;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #464646;
+        }
+
+        #footer-3  #right>div {
+            /* border: 1px solid navy; */
+            width: 100%;
+
         }
 
         #footer-3  #right>div>a>i {
-           height: fit-content;
+           display: flex;
+           align-items: center;
+           text-align: center;
         }
-
-
         #footer-2 {
-            /* height: 100px; */
             /* border: 1px solid blue; */
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -650,17 +680,24 @@
             { image: "https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/Visa-Logo.png" },
 
             { image: "https://uidesign.gbtcdn.com/GB/image/others/20190222_7819/m-Logo.png" },
+
         ]
 
         f5_data.forEach(function (elem) {
             let img = document.createElement("img")
             img.src = elem.image
 
+            
+
             let box_f5 = document.querySelector("#footer-5")
 
             box_f5.append(img)
             main_footer.append(box_f5)
 
+        for(let i=0;i<f5_data.length;i++){
+            let box=document.createElement("div")
+            box.innerText
+        }
         })
 
     }
