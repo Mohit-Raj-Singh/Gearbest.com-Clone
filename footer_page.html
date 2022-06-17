@@ -26,7 +26,16 @@
             background-color: white;
         }
 
-        #cont_boxes {
+        #footer-4 a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #footer-4 a:hover {
+            text-decoration: underline;
+        }
+
+        #footer-4  #cont_boxes {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: auto;
@@ -36,7 +45,7 @@
 
         }
 
-        #cont_boxes>div>p {
+        #footer-4  #cont_boxes>div>p {
             font-family: OpenSans, Arial, Helvetica, sans-serif;
             font-size: 12px;
             font-weight: 400;
@@ -45,43 +54,34 @@
 
         }
 
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        h3 {
+        #footer-4  #cont_boxes h3 {
             margin-bottom: 10px;
             font-family: OpenSans, Arial, Helvetica, sans-serif;
             font-size: 15px;
             font-weight: 700;
         }
 
-        #qr-code {
+        #footer-4  #qr-code {
             padding-top: 10px;
         }
 
-        #qr-code>img {
+        #footer-4  #qr-code>img {
             width: 100px;
             height: 100px;
         }
 
-        #comp_logo {
+        #footer-4   #comp_logo {
             position: absolute;
             margin-left: 110px;
             margin-top: -105px;
         }
 
-        #comp_logo>img {
+        #footer-4  #comp_logo>img {
             width: 50px;
             height: 50px;
         }
 
-        #cont_logo {
+        #footer-4  #cont_logo {
             position: absolute;
             margin-left: 800px;
         }
@@ -129,10 +129,6 @@
             margin-top: 30px;
         }
 
-        /* #left>p,#left>input,#left>div{
-            display: inline;
-        } */
-
         #footer-3 {
             background-color: white;
         }
@@ -145,14 +141,14 @@
             margin-bottom: 20px;
         }
 
-        #left {
+        #footer-3 #left {
             /* width: 50%; */
             display: grid;
             grid-template-columns: 1fr 3fr 1fr;
             align-items: center;
         }
 
-        #left>p {
+        #footer-3 #left>p {
             font-size: 18px;
             font-family: OpenSans, Arial, Helvetica, sans-serif;
             padding-right: 5px;
@@ -160,13 +156,13 @@
             color: grey;
         }
 
-        #left>input {
+        #footer-3 #left>input {
             width: auto;
             height: 30px;
             font-size: 16px;
         }
 
-        #left>div {
+        #footer-3  #left>div {
             background-color: black;
             color: white;
             padding: 8px;
@@ -175,21 +171,22 @@
             align-items: center;
         }
 
-        #right {
+        #footer-3 #right {
             display: grid;
             grid-template-columns: repeat(9, 1fr);
-            gap: 5px 20px;
+            grid-template-rows: auto;
+            gap: 5px 30px;
 
         }
 
-        #right>img {
-            width: 25px;
-            height: 25px;
+        #footer-3  #right>a {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #464646;
         }
 
-        #right>img:hover {
-            background-color: rgb(196, 99, 99);
-        }
 
         #footer-2 {
             /* height: 100px; */
@@ -215,12 +212,21 @@
             font-family: OpenSans, Arial, Helvetica, sans-serif;
             font-size: 14px;
             font-weight: bold;
-
+            color: black;
         }
 
         #f-2_left>img {
             width: auto;
             height: auto;
+        }
+
+        #f-2_left>a {
+            text-decoration: none;
+        }
+
+        #f-2_left>a:hover {
+            text-decoration:underline;
+            
         }
 
         #f-2_right {
@@ -297,7 +303,18 @@
             width: 200px;
 
         }
+
+        #f1_right>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #f1_right>a:hover{
+            text-decoration: underline;
+        }
+        
     </style>
+       <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 </head>
 
 <body>
@@ -351,7 +368,8 @@
         </div>
         <div id="footer-2">
             <div id="f-2_left">
-                <img src="https://css.gbtcdn.com/imagecache/gbw/img/site/new-logo.png" alt="">
+                <a href="https://www.gearbest.com/"><img src="https://css.gbtcdn.com/imagecache/gbw/img/site/new-logo.png"
+                        alt=""></a>
                 <a href="file:///C:/Users/dell/Desktop/gearbest/footer_page.html">
                     <p>AFFORDABLE QUALITY FUN SHOPPING</p>
                 </a>
@@ -366,9 +384,7 @@
                     <h4>Affordable Prices</h4>
                     <p>Factory direct prices for maximum savings</p>
                 </div>
-                <div><img
-                        src="https://cdn-icons-png.flaticon.com/512/709/709790.png"
-                        alt="">
+                <div><img src="https://cdn-icons-png.flaticon.com/512/709/709790.png" alt="">
                     <h4>Express Shipping</h4>
                     <p>Fast, reliable delivery from global warehouses</p>
                 </div>
@@ -387,22 +403,15 @@
                     <div>Subscribe</div>
                 </div>
                 <div id="right">
-                    <img src="https://www.flaticon.com/svg/vstatic/svg/6422/6422199.svg?token=exp=1655453928~hmac=456f0f07f7052d5c05c5c886faadd89d"
-                        alt="">
-                    <img src="https://cdn-icons.flaticon.com/png/128/3669/premium/3669932.png?token=exp=1655453821~hmac=2b689c75d18f5f135a861517fd902c2a"
-                        alt="">
-                    <img src="https://cdn-icons.flaticon.com/png/512/3669/premium/3669688.png?token=exp=1655454248~hmac=5ec66eee7f75c57c9d7bb85b87d76ed6"
-                        alt="">
-                    <img src="https://cdn-icons.flaticon.com/png/512/2175/premium/2175205.png?token=exp=1655454428~hmac=3d2a6ba62f624e1d21a57919db9a9b46"
-                        alt="">
-                    <img src="https://cdn-icons-png.flaticon.com/512/49/49444.png" alt="">
-                    <img src="https://cdn-icons.flaticon.com/png/512/4401/premium/4401407.png?token=exp=1655455248~hmac=6efbfe328b00d48896832fd64401e434"
-                        alt="">
-                    <img src="https://cdn-icons.flaticon.com/png/512/4138/premium/4138168.png?token=exp=1655454744~hmac=892174c1665a6a202928a442abe63938"
-                        alt="">
-                    <img src="https://cdn-icons-png.flaticon.com/512/49/49334.png" alt="">
-                    <img src="https://cdn-icons.flaticon.com/png/512/3665/premium/3665958.png?token=exp=1655455305~hmac=c058470c939483fe790a612b74034c77"
-                        alt="">
+                    <a href="https://www.facebook.com/"><i class="fi fi-brands-facebook"></i></a>
+                    <a href="https://vk.com/?lang=en"><i class="fi fi-brands-vk"></i></a>
+                    <a href=""><i class="fi fi-brands-youtube"></i></i></a>
+                    <a href=""><i class="fi fi-brands-pinterest"></i></a>
+                    <a href=""><i class="fi fi-brands-vk"></i></a>
+                    <a href=""><i class="fi fi-brands-instagram"></i></a>
+                    <a href=""><i class="fi fi-brands-twitter"></i></a>
+                    <a href=""><i class="fi fi-brands-vk"></i></a>
+                    <a href=""><i class="fi fi-brands-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -416,7 +425,7 @@
                     </div>
                     <div id="qr-code"><img src="https://cdn-icons-png.flaticon.com/512/241/241521.png" alt=""></div>
                     <div id="comp_logo">
-                        <img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504884.png?token=exp=1655458138~hmac=1b4dc27c7aa3a2649636917f29774161"
+                        <img src="https://cdn-icons.flaticon.com/png/512/2504/premium/2504884.png?token=exp=1655471655~hmac=ae2fd7c6b88fac5e1cdc63c4cb98a567"
                             alt="">
                         <img src="https://cdn-icons-png.flaticon.com/512/732/732042.png" alt="">
                     </div>
@@ -484,22 +493,6 @@
             sh11: "",
             sh12: "",
         },
-
-        // {
-        //     mh: "Download App!",
-        //     sh1: "Save $3 with App & New User Only",
-        //     sh2: "",
-        //     sh3: "",
-        //     sh4: "",
-        //     sh5: "",
-        //     sh6: "",
-        //     sh7: "",
-        //     sh8: "",
-        //     sh9: "",
-        //     sh10: "",
-        //     sh11: "",
-        //     sh12: "",
-        // }
 
     ]
 
