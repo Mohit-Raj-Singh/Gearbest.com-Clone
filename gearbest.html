@@ -5,53 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #consumer {
-            width: 90%;
-            display: flex;
-            margin: auto;
-        }
-        img {
-            width: 100%;
-        }
-        .slide {
-            width: 100%;
-            position: relative;
-        }
-        .slide > img {
-            width: 100%;
-        }
-        .slide > button {
-            position: absolute;
-            top: 40%;
-            border-radius: 100%;
-            background-color: transparent;
-            color: black;
-            font-size: 20px;
-            width: 50px;
-            height: 50px;
-        }
-        .slide > button:nth-child(2) {
-            left: 5%;
-        }
-        .slide > button:nth-child(3) {
-            right: 5%;
-        }
-        #para {
-            width: 20%;
-        }
-        #services {
-            width: 90%;
-            display: flex;
-            justify-content: center;
-            margin: auto;
-            margin-top: -10px;
-        }
-        #services > div {
-            padding: 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="gearbest.css">
+    
+     
 </head>
 <body>
     <div id="consumer">
@@ -93,36 +49,7 @@
         </div>
     </div>
 </body>
-
-<script>
-    let img= document.querySelector("img");
-
-    let buttons= document.querySelectorAll("button");
-    let imgNum=0;
-    let imgArray= [
-        "https://uidesign.gbtcdn.com/GB/image/8823/Father1190X420en.jpg?imbypass=true",
-        "https://uidesign.gbtcdn.com/GB/image/9534/Smart+Watches+PC+1190X420+EN.jpg",
-        "https://uidesign.gbtcdn.com/GB/image/8823/1190X420-en1.jpg",
-        "https://uidesign.gbtcdn.com/GB/image/8823/1190X420.jpg",
-    ]
-    buttons[0].addEventListener("click",
-    function() {
-        if (imgNum===0) {
-            imgNum=imgArray.length-1;
-        } else {
-            imgNum--;
-        }
-        img.setAttribute("src",imgArray[imgNum]);
-    })
-
-    buttons[1].addEventListener("click",
-    function() {
-        if (imgNum===imgArray.length-1) {
-            imgNum=0;
-        } else {
-            imgNum++;
-        }
-        img.setAttribute("src",imgArray[imgNum]);
-    })
-</script>
+<!-- <script src="gearbest.js"></script> -->
+ 
+  
 </html>

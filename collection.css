@@ -1,0 +1,176 @@
+.collection_MRS {
+    width: 90%;
+    margin: auto;
+}
+
+
+.collection_MRS img {
+    width: 30px;
+    height: 30px;
+}
+
+.firstBar_MRS {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 50px;
+}
+/* .firstBar_MRS:hover{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+} */
+
+.firstBar_MRS>span {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.container_MRS {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 250px;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+
+.container_MRS>div {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.container_MRS>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    /* background-color: green; */
+}
+
+.container_MRS img {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+
+.description_MRS {
+    margin: auto;
+}
+
+.container_MRS p {
+    text-align: center;
+}
+
+.superdeals_MRS {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    margin-top: 30px;
+    gap: 10px;
+     
+}
+
+.superdeals_MRS>div {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.superdeals_MRS>div:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    
+}
+
+.superdeals_MRS img {
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+}
+
+.superdeals_MRS p {
+    width: 95%;
+    text-align: start;
+}
+
+.superdeals_MRS p+p {
+    color: grey;
+    text-align: start;
+    text-decoration: line-through;
+}
+
+.superdeals_MRS p+p+p {
+    color: red;
+    text-align: start;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.new_MRS {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    margin-top: 30px;
+}
+
+.new_MRS img {
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}
+.new_MRS>div {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.new_MRS>div:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.new_MRS p {
+    color: grey;
+    text-align: start;
+    text-decoration: line-through;
+}
+
+.new_MRS p+p {
+    color: red;
+    text-align: start;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.recommand_MRS {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 400px);
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.recommand_MRS>div {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.recommand_MRS>div:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.recommand_MRS img {
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+}
+.recommand_MRS p {
+    width: 95%;
+    text-align: start;
+}
+.recommand_MRS p+p {
+    color: red;
+    text-align: start;
+}
+
+.recommand_MRS p+p+p {
+    text-align: start;
+    font-size: 14px;
+    background-color: #ffedf1;
+    width: 27%;
+}
+.extraMRS{
+    cursor: pointer;
+}
+.extraMRS:hover{
+    color: orange;
+}
