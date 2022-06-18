@@ -94,19 +94,21 @@ let newArrival = [
     {
         newImage: "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16549/goods_thumb_220-v1/ab2f2258ad2e.jpg",
         newProductName: "Original Xiaomi Mi TDS Water Quality Tester Total Dissolved",
-        newPrice: "$12.99",
+        newPrice: "12.99",
         cartBtn: "https://cdn-icons-png.flaticon.com/128/891/891462.png",
         newProductID: "new arrival 14",
     },
     {
         newImage: "https://gloimg.gbtcdn.com/soa/gb/item/6878391336429613056/16552/goods_thumb_220-v2/86364c7a257c.jpg",
         newProductName: "Xiaomi Mijia Massage Gun Electric Neck Massager Smart",
-        newPrice: " $109.99",
+        newPrice: " 109.99",
         cartBtn: "https://cdn-icons-png.flaticon.com/128/891/891462.png",
         newProductID: "new arrival 15",
     },
 
 ];
+
+let productCont= document.getElementById("newContainer")
 
 let cartNewArrivalLs= JSON.parse(localStorage.getItem("newCart")) || [];
 
