@@ -172,6 +172,7 @@ img+p:hover {
     justify-content: space-between;
     margin-bottom: 10px;
     border: 4px rebeccapurple solid;
+    margin-top: 20px;
   }
   .box1 > div {
     
