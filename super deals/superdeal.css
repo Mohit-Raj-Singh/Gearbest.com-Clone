@@ -44,7 +44,7 @@
 
 #bag {
 
-    background-image: linear-gradient(yellow, skyblue);
+    background-color: grey;
     width: 500px;
     height: auto;
     display: flex;
@@ -54,7 +54,7 @@
 
 #midbag {
 
-    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(red,grey);
     width: 500px;
     height: auto;
     display: flex;
@@ -135,13 +135,7 @@ button {
 }
 
 #container>div:nth-child(1):hover{
-    color:coral;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-
-}
-
-#mid_div>div>p:hover{
-    color:cornflowerblue;
+    color:grey;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
 }
