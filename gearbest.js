@@ -1,6 +1,6 @@
-let im= document.querySelector("img");
+let img= document.querySelector("pic");
 
-let btn= document.querySelectorAll("btn");
+let btn= document.querySelectorAll("button");
 let imgNum=0;
 let imgArray= [
     "https://uidesign.gbtcdn.com/GB/image/8823/Father1190X420en.jpg?imbypass=true",
@@ -8,22 +8,22 @@ let imgArray= [
     "https://uidesign.gbtcdn.com/GB/image/8823/1190X420-en1.jpg",
     "https://uidesign.gbtcdn.com/GB/image/8823/1190X420.jpg",
 ]
-btn[0].addEventListener("click",
+btn[1].addEventListener("click",
 function() {
     if (imgNum===0) {
         imgNum=imgArray.length-1;
     } else {
         imgNum--;
     }
-    im.setAttribute("src",imgArray[imgNum]);
+    pic.setAttribute("src",imgArray[imgNum]);
 })
 
-btn[1].addEventListener("click",
+btn[2].addEventListener("click",
 function() {
     if (imgNum===imgArray.length-1) {
         imgNum=0;
     } else {
         imgNum++;
     }
-    im.setAttribute("src",imgArray[imgNum]);
+    pic.setAttribute("src",imgArray[imgNum]);
 })
