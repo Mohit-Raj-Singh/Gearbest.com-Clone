@@ -1,0 +1,47 @@
+#consumer {
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
+.slide {
+    width: 100%;
+    position: relative;
+}
+.slide > img {
+    width: 100%;
+}
+.slide > button {
+    position: absolute;
+    top: 40%;
+    border-radius: 100%;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+}
+.slide > button:nth-child(2) {
+    left: 5%;
+}
+.slide > button:nth-child(3) {
+    right: 5%;
+}
+#para {
+    width: 25%;
+    line-height: 30px;
+    padding-left: 10px;
+    background-color: #f2f2f2;
+}
+#services {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: -10px;
+}
+#services > div {
+    padding: 10px;
+}
