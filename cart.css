@@ -10,7 +10,6 @@
     width: 90%;
     height: auto;
     margin: auto;
-    border: 1px red solid;
 }
 
 .box1 {
@@ -29,7 +28,6 @@
 
 .box1>div:first-child {
     width: 20%;
-    border: 1px blue solid;
 }
 
 .box1>div:first-child>a>img {
@@ -49,7 +47,6 @@
 .box1>div:last-child>div {
 
     display: flex;
-    border: 1px green solid;
     font-size: 15px;
 }
 
@@ -90,7 +87,6 @@ i:hover {
 }
 
 #tableCart {
-    border: 1px cyan solid;
     width: 90%;
     margin: auto;
     margin-top: 50px;
@@ -127,12 +123,10 @@ tr>th {
     height: 150px;
 }
 #newContainer div{
-    border: 1px teal solid;
     display: flex;
 }
 img+p{
     width: 250px;
-    color: red;
     margin-left: 20px;
     font-size: 18px;
 }
@@ -140,12 +134,52 @@ img+p{
 
 
 #newContainer {
-
-    border: 1px blue solid;
+    width: 90%;
+    margin: auto;
 
 
 }
+#newContainer>div{
+    display: flex;
+    justify-content: end;
+}
+#newContainer>div:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
+#newContainer>div>div{
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 500px;
+    
+}
+#newContainer h2{
+    margin-left: 30px;
+}
+#newContainer button{
+    background-color: yellow;
+    font-weight: bold;
+    width: 150px;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 25px;
+
+}
+#checkOut{
+    background-color: yellow;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 25px;
+    margin-left: 1200px;
+    border-color: transparent;
+    cursor: pointer;
+   
+}
+#checkOut:hover{
+    background-color: #ffda00;
+}
 
 
 
@@ -174,8 +208,10 @@ img+p{
 
 #footer-4 {
     padding: 20px;
-    /* border: 1px solid; */
+     border: 1px solid; 
     background-color: white;
+    width: 90%;
+    margin: auto;
 }
 
 #footer-4 a {

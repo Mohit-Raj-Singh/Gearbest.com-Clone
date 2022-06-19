@@ -1,5 +1,4 @@
 #newMain {
-    border: 1px red solid;
     width: 90%;
     margin: auto;
     height: auto;
@@ -8,7 +7,6 @@
 
 #newContainer {
     margin-top: 20px;
-    border: 1px blue solid;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -17,7 +15,6 @@
 }
 
 #newContainer>div {
-    border: 1px green solid;
     padding: 5px;
 }
 
@@ -47,7 +44,6 @@ img+p+h3 {
 }
 
 #newMRSmain {
-    border: 1px teal solid;
     width: 90%;
     margin: auto;
     margin-top: 20px;
@@ -134,7 +130,6 @@ img+p:hover {
     justify-content: center;
     align-items: center;
     margin: auto;
-    border: 5px cyan solid;
     margin-top: 50px;
 }
 
@@ -162,7 +157,6 @@ img+p:hover {
     width: 90%;
     height: auto;
     margin: auto;
-    border: 5px rgb(0, 162, 255) solid;
   }
   .box1 {
     display: flex;
@@ -171,7 +165,6 @@ img+p:hover {
     height: 100px;
     justify-content: space-between;
     margin-bottom: 10px;
-    border: 4px rebeccapurple solid;
     margin-top: 20px;
   }
   .box1 > div {
@@ -341,7 +334,6 @@ img+p:hover {
     width: 90%;
     margin: auto;
     background-color: #fafafa;
-    border: 5px black solid;
     margin-top: 50px;
 }
 

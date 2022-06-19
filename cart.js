@@ -65,6 +65,24 @@ function Delete(id){
 }
 
 
+let totalCartBox=document.createElement("div");
+
+let subTotalBox=document.createElement("div");
+
+let subTotal=document.createElement("p");
+subTotal.innerText="Your Total :"
+
+let totalHead=document.createElement("h2");
+totalHead.innerText=totalPrice;
+
+
+
+
+
+subTotalBox.append(subTotal, totalHead);
+totalCartBox.append(subTotalBox);
+document.querySelector("#newContainer").append(totalCartBox);
+
 
 
 
