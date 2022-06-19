@@ -10,13 +10,14 @@
              margin: 0;
               padding: 0;
             box-sizing: border-box;
+            font-family: sans-serif;
 }
 body {
   background-color: rgb(248, 246, 246);
 }
 h1{
     text-align: center;
-    color: aqua;
+    color: black;
     border-bottom: 2px solid black;
     margin-left: 510px;
     display: inline-block
@@ -42,9 +43,16 @@ option {
   width: 100%;
   margin-top: 5px;
   background-color: rgb(24, 64, 110);
-  color: white;
+  color:black;
   border: none;
   border-radius: 15px;
+}
+#h1{
+  width: 30%;
+  background-color: red;
+  color: black;
+  margin: auto;
+  /* margin-left: 50px; */
 }
     </style>
 </head>
@@ -99,13 +107,14 @@ option {
           type="number"
           placeholder="Enter your pincode"
         /><br />
-       
         <input type="submit" name="submit" id="submit" value="confirm adress">
+       
+       
       </form> 
 </body>
 </html>
 <script>
-    document.querySelector("submit").addEventListener("click",addressbook);
+    document.querySelector("#submit").addEventListener("click",addressbook);
     function addressbook(){
         window.location.href="payment.html";
     }
