@@ -70,10 +70,14 @@ i:hover {
 
 
 .do>div {
+    width: 20%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    margin-left: 650px;
+    
+    margin-top: 20px;
 }
 
 #done>a {
@@ -172,13 +176,14 @@ img+p{
     height: 50px;
     margin-top: 30px;
     font-size: 25px;
-    margin-left: 1200px;
+    margin-left: 1000px;
     border-color: transparent;
     cursor: pointer;
    
 }
 #checkOut:hover{
     background-color: #ffda00;
+    font-size: 20px;
 }
 
 
