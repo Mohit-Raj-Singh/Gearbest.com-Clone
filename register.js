@@ -12,6 +12,7 @@ function mylogin(event){
     if(checkemails(data.email)==true){
         userdata.push(data);
         localStorage.setItem("userdata",JSON.stringify(userdata));
+        window.location.href="signin.html"
         console.log(userdata);
     }else{
         alert("Account already exist")

@@ -31,7 +31,8 @@ img {
 }
 #para {
     width: 25%;
-    line-height: 30px;
+    height: 342px;
+    line-height: 27px;
     padding-left: 10px;
     background-color: #f2f2f2;
 }

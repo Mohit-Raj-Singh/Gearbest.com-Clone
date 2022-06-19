@@ -11,6 +11,7 @@ form.addEventListener("submit",function(event){
     if(checksignin(data.email,data.password)==true){
         localStorage.setItem("signin",JSON.stringify(data));
         alert("sign in successful")
+        window.location.href="index.html"
     }else{
         alert("wrong username and password");
     }
