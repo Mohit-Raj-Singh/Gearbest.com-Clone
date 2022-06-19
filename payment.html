@@ -90,24 +90,12 @@
 </html>
 <script>
     document.querySelector("#btn").addEventListener("click",collectpayment);
-    let mydata=JSON.parse(localStorage.getItem("paymentData"))||[];
-    function collectpayment(){
-        let obj={
-            name:"Ankur Kumar Chauhan",
-            number:"1212454578783636",
-            expdate:"12/05/2025",
-            cvv:"456"}
-            console.log(obj.number);
-        
-    let otp=[1,2,3,4];
-    if(document.getElementById("myname").value==obj.name || document.getElementById("myNum").value==obj.number || document.getElementById("date").value==obj.expdate || document.getElementById("cvv")==obj.cvv){
-        window.location.href="enterotp.html"
-    }else{
-        alert("credential does not match");
-    }
+  function collectpayment(){
+    window.location.href="enterotp.html";
+  }
     document.getElementById("myNum").value="";
     document.getElementById("myname").value="";
     document.getElementById("date").value="";
     document.getElementById("cvv").value="";
-}
+
 </script>
