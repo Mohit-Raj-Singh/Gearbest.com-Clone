@@ -91,6 +91,7 @@
 </html>
 <script>
     document.querySelector("#btn").addEventListener("click",collectpayment);
+<<<<<<< HEAD
     let mydata=JSON.parse(localStorage.getItem("paymentData"))||[];
     function collectpayment(){
         let obj={
@@ -106,9 +107,14 @@
     }else{
         alert("credential does not match");
     }
+=======
+  function collectpayment(){
+    window.location.href="enterotp.html";
+  }
+>>>>>>> 9678b37ca3eafe2b14c880f9a3a8ab1c8c98a1c6
     document.getElementById("myNum").value="";
     document.getElementById("myname").value="";
     document.getElementById("date").value="";
     document.getElementById("cvv").value="";
-}
+
 </script>
